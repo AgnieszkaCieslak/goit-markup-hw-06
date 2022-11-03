@@ -57,9 +57,7 @@ ul {
   align-items: center;
 }
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 21px;
+  padding: 24px 0 25px 21px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -102,16 +100,16 @@ ul {
   text-decoration: none;
 }
 .mail-menu {
-  width: 161px;
   display: flex;
-  align-items: center;
+  width: 161px;
   justify-content: space-between;
+  align-items: center;
 }
 .tel-menu {
-  width: 130px;
   display: flex;
-  align-items: center;
+  width: 130px;
   justify-content: space-between;
+  align-items: center;
 }
 .dark {
   color: inherit;
@@ -144,10 +142,10 @@ ul {
   position: absolute;
   width: 53px;
   height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
   top: 45px;
   left: 0px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 /* HEADER & BUTTON*/
@@ -192,8 +190,8 @@ ul {
 /* CONTAINER & SECTIONs */
 
 .container {
-  width: 1200px;
   margin: auto;
+  width: 1200px;
 }
 .section {
   padding-block: 94px;
@@ -205,9 +203,9 @@ ul {
 /* OUR STRENGTHS  */
 
 .icon-box {
-  background-color: var(--background-color-light-grey);
-  padding: 25px 100px;
   margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--background-color-light-grey);
 }
 .list-lorem-index {
   display: flex;
@@ -283,8 +281,8 @@ ul {
 
 .our-team-index {
   letter-spacing: 0.03em;
-  background-color: var(--background-color-light-grey);
   text-align: center;
+  background-color: var(--background-color-light-grey);
 }
 .header-our-team-index {
   font-weight: 700;
@@ -292,8 +290,8 @@ ul {
   line-height: 1.16;
 }
 .list-team-index {
-  padding-inline: 215px;
   margin-top: 50px;
+  padding-inline: 215px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -318,23 +316,23 @@ ul {
   color: var(--color-dark-grey);
 }
 .icons-list {
-  display: flex;
-  justify-content: space-between;
   padding-inline: 32px;
   padding-top: 16px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -------------  ICONS   OUR TEAM ---------- */
 
 .social-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--background-color-white);
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   fill: var(--background-color-grey);
 }
 .social-icon {
@@ -374,10 +372,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border-radius: 4px;
   width: 170px;
   height: 92px;
+  box-sizing: border-box;
+  border-radius: 4px;
   background-color: var(--background-color-white);
   border: 1px solid var(--color-grey);
   fill: var(--background-color-grey);
@@ -442,17 +440,17 @@ ul {
 
 .social-list-black {
   display: flex;
-  width: 206px;
   justify-content: space-between;
+  width: 206px;
 }
 .social-links-black {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--background-color-icon-black);
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   fill: var(--background-color-white);
 }
 .social-links-black:hover,
@@ -464,8 +462,8 @@ ul {
   margin-left: 78px;
 }
 .subscribe {
-  display: block;
   padding-top: 12px;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -476,45 +474,45 @@ ul {
 .signup-form {
   margin-top: 20px;
   /* background-color: blueviolet; */
-  width: 570px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 570px;
 }
 .sign-up-input {
   width: 358px;
   height: 50px;
+  color: var(--color-white);
   background-color: var(--background-color-dark-blue);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
 }
+.sign-up-input:focus-within {
+  border: 3px solid var(--color-blue);
+}
 input[type="email"].sign-up-input::-webkit-input-placeholder {
   padding-left: 16px;
 }
-.sign-up-input:active {
-  outline: 1px solid var(--color-blue);
-}
 .sign-up-button {
+  padding-top: 3px;
   display: flex;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 200px;
   height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
   background: var(--background-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-white);
 }
 
 /*--------- MODAL WINDOW ------------*/
@@ -522,7 +520,6 @@ input[type="email"].sign-up-input::-webkit-input-placeholder {
 .backdrop {
   width: 100vw;
   height: 100vh;
-  box-sizing: contain;
   position: fixed;
   z-index: 1;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -537,12 +534,12 @@ input[type="email"].sign-up-input::-webkit-input-placeholder {
   transform: rotate(180deg);
 }
 .modal {
-  z-index: 2;
-  position: absolute;
   width: 528px;
   height: 581px;
+  position: absolute;
   left: 536px;
   top: 141px;
+  z-index: 2;
   background: var(--background-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -550,27 +547,33 @@ input[type="email"].sign-up-input::-webkit-input-placeholder {
 }
 /*--------- MODAL INPUTS ------------*/
 .modal-container {
-  justify-content: center;
+  padding-inline: 40px;
+  padding-bottom: 40px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 528px;
+  /* background-color: gold; */
 }
 .modal-inputs {
   margin: 0 0 0 0;
-  padding: 12px 0 20px 40px;
-  /* width: 448px; */
-
+  padding: 0 0 0 0;
+  /* padding: 12px 0 20px 40px; */
+  display: flex;
   flex-direction: column;
   /* background-color: aqua; */
   border: none;
 }
 .modal-header {
   padding-top: 40px;
-  display: flex;
+  padding-bottom: 12px;
+  display: block;
   /* background-color: coral; */
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--color-dark);
 }
 .modal-label {
@@ -585,9 +588,7 @@ input[type="email"].sign-up-input::-webkit-input-placeholder {
 .modal-input-container {
   position: relative;
 }
-/* .modal-input-container:hover{
-fill:var(--color-blue);
-} */
+
 .modal-input-container:focus-within {
   fill: var(--color-blue);
 }
@@ -607,64 +608,111 @@ fill:var(--color-blue);
   resize: none;
 }
 .input-contact-details.forty {
+  padding-left: 42px;
   height: 40px;
 }
-
-textarea[type="text"].input-contact-details::-webkit-input-placeholder {
-  padding-top: 12px;
-  padding-left: 16px;
+textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.input-contact-details.comment {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  padding-top: 12px;
+  padding-left: 16px;
+}
 .modal-statement {
-  background-color: crimson;
-  width: 420px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left:8px;
+  position: relative;
+  /* background-color:aquamarine; */
+  display:block;
+  width: 448px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.modal-checkbox:focus-within {
-  color: invert;
-}
-.statement {
-  font-weight: 400;
+  justify-content: center;
+font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-dark-grey);
 }
+.modal-checkbox {
+  visibility: hidden;
+}
+.checkbox-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.modal-checkbox:checked + span svg {
+  z-index: 5;
+  fill: var(--color-blue);
+  stroke: var(--color-blue);
+  stroke-width: 2px;
+}
+.square {
+  position: absolute;
+  z-index: 4;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 15px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+.statement {
+  
+}
 .regulations-policy {
   color: var(--color-blue);
 }
 .modal-button-send {
+  margin: auto;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  text-align: center;
+  background: var(--background-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
 }
-
 .cross-plus-circle {
-  padding: 0;
   margin: 0;
-  z-index: 3;
+  padding: 0;
   position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
   display: flex;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--background-color-white);
-  top: 8px;
-  right: 8px;
 }
-
 .button-cross {
   position: absolute;
+  top: 20%;
+  left: 18%;
   display: flex;
   width: 18px;
   height: 18px;
   /* margin: auto; */
-  top: 20%;
-  left: 18%;
 }
 
 /* PORTFOLIO */
@@ -719,18 +767,18 @@ textarea[type="text"].input-contact-details::-webkit-input-placeholder {
   margin-top: 20px;
 }
 .picture-header-portfolio {
-  z-index: 3;
   padding-left: 24px;
+  z-index: 3;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .picture-description-portfolio {
-  z-index: 3;
   margin-top: 4px;
   padding-bottom: 20px;
   padding-left: 24px;
+  z-index: 3;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -742,10 +790,10 @@ textarea[type="text"].input-contact-details::-webkit-input-placeholder {
 /* PORTFOLIO OVERLAY */
 
 .blue-box {
+  margin-inline: auto;
   position: relative;
   width: 370px;
   height: 294px;
-  margin-inline: auto;
   background-color: var(--background-color-blue);
   overflow: hidden;
 }
@@ -753,22 +801,21 @@ textarea[type="text"].input-contact-details::-webkit-input-placeholder {
   transform: translateX(0);
 }
 .overlay {
-  display: flex;
   position: absolute;
   top: 0px;
   left: 0;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms ease;
   transform: translate(0, 300px);
 }
-
 .overlay-text {
+  margin: 0;
   padding-top: 49px;
   padding-left: 24px;
   width: 301px;
-  margin: 0;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;

@@ -465,7 +465,9 @@
       </div>
       <!-----------------SUBSCRIBE TO THE NEWSLETTER-------------->
       <div class="third-footer">
-        <label class="subscribe">Zapisz sie do newslettera</label>
+        <label class="subscribe" for="email-subscribe"
+          >Zapisz sie do newslettera</label
+        >
 
         <form
           class="signup-form"
@@ -475,8 +477,9 @@
         >
           <input
             class="sign-up-input"
+            id="email-subscribe"
             type="email"
-            name="email"
+            name="email-subscribe"
             placeholder="E-mail"
           />
 
@@ -493,93 +496,91 @@
     <form class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!---------------------- MODAL INPUTS ---------------------->
-        <form class="modal-container">
-          <fieldset
-            class="modal-inputs"
-            name="contact-details"
-            autocomplete="on"
-            novalidate
-          >
-            <legend class="modal-header">
-              Zostaw swoje dane w formularzu poniżej
-            </legend>
-            <label class="modal-label">Imię</label>
+        <div class="modal-container">
+          <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal-label" for="name">Imię</label>
+          <div class="modal-input-container">
+            <span
+              ><svg class="modal-input-icon" width="12" height="12">
+                <use href="images/icons.svg#icon-icon-human"></use></svg
+            ></span>
+            <input
+              class="input-contact-details forty"
+              id="name"
+              type="text"
+              name="name"
+            />
+          </div>
 
-            <div class="modal-input-container">
-              <svg class="modal-input-icon" width="12" height="12">
-                <use href="images/icons.svg#icon-icon-human"></use>
-              </svg>
-              <input
-                class="input-contact-details forty"
-                type="text"
-                name="name"
-              />
-            </div>
+          <label class="modal-label" for="phone">Telefon</label>
 
-            <label class="modal-label">Telefon</label>
+          <div class="modal-input-container">
+            <svg class="modal-input-icon" width="13" height="13">
+              <use href="images/icons.svg#icon-earphone"></use>
+            </svg>
+            <input
+              class="input-contact-details forty"
+              id="phone"
+              type="tel"
+              name="phone"
+            />
+          </div>
 
-            <div class="modal-input-container">
-              <svg class="modal-input-icon" width="13" height="13">
-                <use href="images/icons.svg#icon-earphone"></use>
-              </svg>
-              <input
-                class="input-contact-details forty"
-                type="tel"
-                name="phone"
-                id="phone"
-              />
-            </div>
+          <label class="modal-label" for="email">Email</label>
 
-            <label class="modal-label">Email</label>
-
-            <div class="modal-input-container">
-              <svg class="modal-input-icon" width="15" height="12">
-                <use href="images/icons.svg#icon-envelope-II"></use>
-              </svg>
-              <input
-                class="input-contact-details forty"
-                type="email"
-                name="email"
-              />
-            </div>
-
-            <div class="modal-input-container">
-              <label class="modal-label">Komentarz</label>
-              <textarea
-                class="input-contact-details"
-                type="text"
-                name="coment"
-                rows="10"
-                placeholder="Wprowadź tekst"
-              ></textarea>
-            </div>
-          </fieldset>
-
-          <div class="modal-statement">
+          <div class="modal-input-container">
+            <svg class="modal-input-icon" width="15" height="12">
+              <use href="images/icons.svg#icon-envelope-II"></use>
+            </svg>
+            <input
+              class="input-contact-details forty"
+              id="email"
+              type="email"
+              name="email"
+            />
+          </div>
+          <label class="modal-label" for="comment">Komentarz</label>
+          <div class="modal-input-container">
+            <textarea
+              class="input-contact-details comment"
+              id="comment"
+              name="comment"
+              rows="6"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </div>
+          <label class="modal-statement" for="regulations-and-privacy-policy">
+            Oświadczam iż akceptuję&nbsp;<a class="regulations-policy" href="#"
+              >Regulamin</a
+            >&nbsp;i&nbsp;
+            <a class="regulations-policy" href="#">Politykę Prywatności.</a
+            ><span class="square"></span>
             <input
               class="modal-checkbox"
+              id="regulations-and-privacy-policy"
               type="checkbox"
               name="regulations-and-privacy-policy"
-            />
-            <p class="statement">
-              Oświadczam iż akceptuję
-              <a class="regulations-policy" href="#">Regulamin</a> i
-              <a class="regulations-policy" href="#">Politykę Prywatności.</a>
-            </p>
-          </div>
-          <button class="modal-button-send" type="button" name="send">
+            /><span>
+              <svg class="checkbox-icon" width="16" height="15">
+                <use href="images/icons.svg#icon-icon-uncheck"></use>
+              </svg>
+            </span>
+          </label>
+
+          <button class="modal-button-send" type="submit" name="send">
             Wyślij
           </button>
-        </form>
-        <button
-          class="cross-plus-circle pointer"
-          type="button"
-          data-modal-close
-        >
-          <svg class="button-cross">
-            <use href="images/icons.svg#icon-X"></use>
-          </svg>
-        </button>
+
+          <button
+            class="cross-plus-circle pointer"
+            type="button"
+            data-modal-close
+          >
+            <svg class="button-cross">
+              <use href="images/icons.svg#icon-X"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </form>
 
