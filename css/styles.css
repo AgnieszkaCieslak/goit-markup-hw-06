@@ -128,7 +128,6 @@ ul {
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
 }
-
 .links-menu.blue::after {
   content: "";
   position: absolute;
@@ -444,7 +443,9 @@ ul {
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
 }
+
 /* ----------  SUBSCRIBE TO THE NEWSLETTER  ---------- */
+
 .third-footer {
   margin-left: 78px;
 }
@@ -539,6 +540,7 @@ ul {
   border-radius: 4px;
 }
 /*--------- MODAL INPUTS ------------*/
+
 .modal-header {
   padding-top: 40px;
   margin-bottom: 12px;
@@ -598,7 +600,6 @@ ul {
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
 }
-
 .input-contact-details.forty {
   padding-left: 42px;
   height: 40px;
@@ -700,10 +701,12 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 
 /* PORTFOLIO */
 /* PORTFOLIO BUTTONS */
-
+.main-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .buttons-margin {
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .list-button-portfolio {
   display: flex;
@@ -733,7 +736,7 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 /* PORTFOLIO PICTURES */
 
 .picture-box-portfolio {
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -775,6 +778,7 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 .pointer {
   cursor: pointer;
 }
+
 /* PORTFOLIO OVERLAY */
 
 .blue-box {
