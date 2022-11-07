@@ -49,7 +49,7 @@ ul {
   align-items: center;
 }
 .logo {
-  padding: 24px 0 25px 15px;
+  padding: 24px 0;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -69,19 +69,20 @@ ul {
 
 .nav-margin {
   margin-left: 93px;
-  width: 254px;
+ }
+.list-nav-index {
+  display: flex;
+  gap: 50px;
+  padding: 0;
 }
-.list-nav-index,
 .list-adr-index {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   padding: 0;
 }
 .menu-margin {
-  padding-right: 21px;
-  margin-left: 345px;
-  width: 342px;
-}
+    margin-left: 345px;
+  }
 .links-menu {
   display: block;
   font-weight: 500;
@@ -103,6 +104,9 @@ ul {
 }
 .dark {
   color: inherit;
+  transition-property: fill, color;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
 }
 .blue {
   color: var(--color-blue);
@@ -110,12 +114,18 @@ ul {
 .dark-grey {
   color: var(--color-dark-grey);
   fill: var(--color-dark-grey);
+  transition-property: fill, color;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
 }
 .white {
   color: var(--color-white);
 }
 .light-grey {
   color: var(--color-light-grey);
+  transition-property: fill, color;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
 }
 .dark:hover,
 .dark-grey:hover,
@@ -125,8 +135,6 @@ ul {
 .light-grey:focus {
   color: var(--color-blue);
   fill: var(--color-blue);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 .links-menu.blue::after {
   content: "";
@@ -233,6 +241,9 @@ ul {
 
 /* WHAT DO WE DO */
 
+.what-do-we-do-section {
+  padding-bottom: 94px;
+}
 .header-what-do-we-do-index {
   font-weight: 700;
   font-size: 36px;
@@ -242,10 +253,9 @@ ul {
 }
 .image-list-index {
   margin-top: 50px;
-  padding-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
-}
+    display: flex;
+  gap: 30px;
+  }
 .what-do-we-do-list {
   height: 294px;
 }
@@ -257,7 +267,7 @@ ul {
   width: 370px;
   height: 70px;
   background: var(--background-color-dimness);
-  top: -70px;
+  bottom: 0;
   font-weight: 700;
   line-height: 1.14;
   justify-content: center;
@@ -321,6 +331,9 @@ ul {
   background-color: var(--background-color-white);
   border-radius: 50%;
   fill: var(--background-color-grey);
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: fill, background-color;
 }
 .social-icon {
   width: 20px;
@@ -330,8 +343,6 @@ ul {
 .social-links:focus {
   background-color: var(--background-color-blue);
   fill: var(--background-color-white);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 
 /* ----------OUR CLIENTS-------------- */
@@ -367,13 +378,14 @@ ul {
   background-color: var(--background-color-white);
   border: 1px solid var(--color-grey);
   fill: var(--background-color-grey);
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: fill, border;
 }
 .icon-our-clients:hover,
 .icon-our-clients:focus {
   border: 1px solid var(--color-blue);
   fill: var(--color-blue);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 
 /* ----------FOOTER -----------*/
@@ -436,18 +448,19 @@ ul {
   background-color: var(--background-color-icon-black);
   border-radius: 50%;
   fill: var(--background-color-white);
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: background-color;
 }
 .social-links-black:hover,
 .social-links-black:focus {
   background-color: var(--background-color-blue);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 
 /* ----------  SUBSCRIBE TO THE NEWSLETTER  ---------- */
 
 .third-footer {
-  margin-left: 78px;
+    margin-left: auto;
 }
 .subscribe {
   margin-bottom: 20px;
@@ -474,18 +487,17 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: border-color;
 }
 .sign-up-input:hover {
   border-color: var(--color-blue);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 .sign-up-input:focus-within {
   border: 3px solid var(--color-blue);
   outline: none;
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
-}
+  }
 .sign-up-button {
   padding-top: 3px;
   display: flex;
@@ -527,6 +539,7 @@ ul {
   transform: rotate(180deg);
 }
 .modal {
+  padding: 40px;
   width: 528px;
   height: 581px;
   position: absolute;
@@ -542,8 +555,7 @@ ul {
 /*--------- MODAL INPUTS ------------*/
 
 .modal-header {
-  padding-top: 40px;
-  margin-bottom: 12px;
+   margin-bottom: 12px;
   display: block;
   /* background-color: coral; */
   font-weight: 700;
@@ -551,10 +563,6 @@ ul {
   line-height: 1.15;
   text-align: center;
   color: var(--color-dark);
-}
-.modal-container {
-  padding-left: 40px;
-  /* background-color: gold; */
 }
 .modal-label {
   margin-bottom: 4px;
@@ -568,17 +576,24 @@ ul {
 }
 .modal-input-group {
   position: relative;
-}
-.modal-input-group:hover {
+  margin-bottom: 10px;
+  transition-property: fill;
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
-  fill: var(--color-blue);
+}
+.modal-input-group-comment {
+  position: relative;
+}
+.modal-input-group:hover,
+.modal-input-group:focus,
+.modal-input-group-comment:hover,
+.modal-input-group-comment:focus {
+   fill: var(--color-blue);
   border-color: var(--color-blue);
 }
-.modal-input-group:focus-within {
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
-  fill: var(--color-blue);
+.modal-input-group:focus-within,
+.modal-input-group-comment:focus-within {
+   fill: var(--color-blue);
 }
 .modal-input-icon {
   position: absolute;
@@ -586,20 +601,21 @@ ul {
   left: 15px;
 }
 .input-contact-details {
-  margin-bottom: 10px;
-  display: flex;
+   display: flex;
   justify-content: center;
   width: 448px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   outline-color: var(--color-blue);
-}
-.input-contact-details:hover {
-  border-color: var(--color-blue);
+  transition-property: border-color;
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
 }
+.input-contact-details:hover {
+  border-color: var(--color-blue);
+  }
 .input-contact-details.forty {
   padding-left: 42px;
   height: 40px;
@@ -721,6 +737,9 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   background: var(--background-color-light-grey);
   border-radius: 4px;
   border: var(--background-color-light-grey);
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: color, background-color, box-shadow;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -728,16 +747,12 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   background: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
-}
+  }
 
 /* PORTFOLIO PICTURES */
 
 .picture-box-portfolio {
-  /* padding-bottom: 94px; */
-  display: flex;
+    display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
@@ -746,20 +761,20 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   margin: 0 0 0 0;
   border-bottom: 1px solid #eeeeee;
   width: 370px;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: box-shadow;
 }
 .picture-portfolio:hover,
 .picture-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
 }
 .picture-margin {
-  margin-top: 20px;
+   padding: 20px 24px;
 }
 .picture-header-portfolio {
-  padding-left: 24px;
-  z-index: 3;
+    z-index: 3;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -767,9 +782,7 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 }
 .picture-description-portfolio {
   margin-top: 4px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  z-index: 3;
+    z-index: 3;
   font-size: 16px;
   line-height: 1.87;
   /* letter-spacing: 0.03em; */
@@ -789,10 +802,13 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   background-color: var(--background-color-blue);
   overflow: hidden;
 }
-.picture-portfolio:hover .overlay {
-  transform: translateX(0);
+.picture-portfolio .overlay {
   transition-duration: var(--t-duration);
   transition-timing-function: var(--t-timing-function);
+  transition-property: transform;
+}
+.picture-portfolio:hover .overlay {
+  transform: translateX(0);
 }
 .overlay {
   position: absolute;

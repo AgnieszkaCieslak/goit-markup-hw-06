@@ -26,8 +26,8 @@
           >Web<span class="logo-black">Studio</span></a
         >
         <!-- --------------   A   P   K  -------------- -->
-        <nav class="nav-margin">
-          <ul class="list-nav-index">
+        <nav>
+          <ul class="nav-margin list-nav-index">
             <li>
               <a class="links-menu blue" style="position: relative" href="#"
                 >Agencja</a
@@ -40,8 +40,8 @@
           </ul>
         </nav>
         <!-- --------------    M    T    -------------- -->
-        <div class="menu-margin">
-          <ul class="list-adr-index">
+        <div>
+          <ul class="menu-margin list-adr-index">
             <li>
               <a
                 class="links-menu dark-grey mail-menu"
@@ -146,45 +146,45 @@
         </div>
       </section>
       <!-----------------WHAT DO WE DO ------------------>
-      <section>
+      <section class="what-do-we-do-section">
         <div class="container">
           <h2 class="header-what-do-we-do-index">Czym się zajmujemy</h2>
 
           <ul class="image-list-index">
-            <li class="what-do-we-do-list">
+            <li class="what-do-we-do-list" style="position: relative">
               <img
                 class="what-do-we-do-image"
                 src="images/coding-image.jpg"
                 alt="typing-in-front-of-the-monitor"
                 width="370"
               />
-              <div class="dimnest" style="position: relative">
+              <p class="dimnest" style="position: absolute">
                 Aplikacje komputerowe
-              </div>
+              </p>
             </li>
 
-            <li>
+            <li style="position: relative">
               <img
                 class="what-do-we-do-image"
                 src="images/layout-image.jpg"
                 alt="Layout"
                 width="370"
               />
-              <div class="dimnest" style="position: relative">
+              <p class="dimnest" style="position: absolute">
                 Aplikacje mobilne
-              </div>
+              </p>
             </li>
 
-            <li>
+            <li style="position: relative">
               <img
                 class="what-do-we-do-image"
                 src="images/design-image.jpg"
                 alt="Design"
                 width="370"
               />
-              <div class="dimnest" style="position: relative">
+              <p class="dimnest" style="position: absolute">
                 Rozwiązania graficzne
-              </div>
+              </p>
             </li>
           </ul>
         </div>
@@ -494,6 +494,7 @@
               type="email"
               name="email-subscribe"
               placeholder="E-mail"
+              required
             />
 
             <button class="sign-up-button pointer" type="submit">
@@ -512,7 +513,7 @@
         <!---------------------- MODAL INPUTS ---------------------->
 
         <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
-        <div class="modal-container">
+        <form>
           <label class="modal-label" for="name">Imię</label>
           <div class="modal-input-group">
             <span
@@ -558,7 +559,7 @@
             />
           </div>
           <label class="modal-label" for="comment">Komentarz</label>
-          <div class="modal-input-group">
+          <div class="modal-input-group-comment">
             <textarea
               class="input-contact-details comment"
               id="comment"
@@ -589,11 +590,10 @@
               </svg>
             </span>
           </label>
-        </div>
-
-        <button class="modal-button-send pointer" type="submit" name="send">
-          Wyślij
-        </button>
+          <button class="modal-button-send pointer" type="submit" name="send">
+            Wyślij
+          </button>
+        </form>
 
         <button
           class="cross-plus-circle pointer"
