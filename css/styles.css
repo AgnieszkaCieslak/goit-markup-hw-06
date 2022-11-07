@@ -69,7 +69,7 @@ ul {
 
 .nav-margin {
   margin-left: 93px;
- }
+}
 .list-nav-index {
   display: flex;
   gap: 50px;
@@ -81,8 +81,8 @@ ul {
   padding: 0;
 }
 .menu-margin {
-    margin-left: 345px;
-  }
+  margin-left: 345px;
+}
 .links-menu {
   display: block;
   font-weight: 500;
@@ -253,9 +253,9 @@ ul {
 }
 .image-list-index {
   margin-top: 50px;
-    display: flex;
+  display: flex;
   gap: 30px;
-  }
+}
 .what-do-we-do-list {
   height: 294px;
 }
@@ -460,7 +460,7 @@ ul {
 /* ----------  SUBSCRIBE TO THE NEWSLETTER  ---------- */
 
 .third-footer {
-    margin-left: auto;
+  margin-left: auto;
 }
 .subscribe {
   margin-bottom: 20px;
@@ -497,7 +497,7 @@ ul {
 .sign-up-input:focus-within {
   border: 3px solid var(--color-blue);
   outline: none;
-  }
+}
 .sign-up-button {
   padding-top: 3px;
   display: flex;
@@ -555,7 +555,7 @@ ul {
 /*--------- MODAL INPUTS ------------*/
 
 .modal-header {
-   margin-bottom: 12px;
+  margin-bottom: 12px;
   display: block;
   /* background-color: coral; */
   font-weight: 700;
@@ -588,12 +588,12 @@ ul {
 .modal-input-group:focus,
 .modal-input-group-comment:hover,
 .modal-input-group-comment:focus {
-   fill: var(--color-blue);
+  fill: var(--color-blue);
   border-color: var(--color-blue);
 }
 .modal-input-group:focus-within,
 .modal-input-group-comment:focus-within {
-   fill: var(--color-blue);
+  fill: var(--color-blue);
 }
 .modal-input-icon {
   position: absolute;
@@ -601,7 +601,7 @@ ul {
   left: 15px;
 }
 .input-contact-details {
-   display: flex;
+  display: flex;
   justify-content: center;
   width: 448px;
   height: 120px;
@@ -615,7 +615,7 @@ ul {
 }
 .input-contact-details:hover {
   border-color: var(--color-blue);
-  }
+}
 .input-contact-details.forty {
   padding-left: 42px;
   height: 40px;
@@ -717,6 +717,7 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 
 /* PORTFOLIO */
 /* PORTFOLIO BUTTONS */
+
 .main-portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
@@ -747,12 +748,12 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
   background: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+}
 
 /* PORTFOLIO PICTURES */
 
 .picture-box-portfolio {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
@@ -771,10 +772,10 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .picture-margin {
-   padding: 20px 24px;
+  padding: 20px 24px;
 }
 .picture-header-portfolio {
-    z-index: 3;
+  z-index: 3;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -782,10 +783,9 @@ textarea[id="comment"].input-contact-details::-webkit-input-placeholder {
 }
 .picture-description-portfolio {
   margin-top: 4px;
-    z-index: 3;
+  z-index: 3;
   font-size: 16px;
   line-height: 1.87;
-  /* letter-spacing: 0.03em; */
   color: var(--color-dark-grey);
 }
 .pointer {
