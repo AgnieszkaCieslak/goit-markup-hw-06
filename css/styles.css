@@ -39,7 +39,7 @@ ul {
   list-style-type: none;
 }
 
-/* LOGO */
+/*------------ LOGO ----------*/
 
 .header {
   border-bottom: 1px solid var(--color-border);
@@ -65,7 +65,7 @@ ul {
   color: var(--color-white);
 }
 
-/*              NAV         */
+/*----------NAV------*/
 
 .nav-margin {
   margin-left: 93px;
@@ -147,7 +147,7 @@ ul {
   border-radius: 2px;
 }
 
-/* HEADER & BUTTON*/
+/* --------HEADER & BUTTON----------*/
 
 .header-index {
   margin: 0 auto;
@@ -188,7 +188,7 @@ ul {
   border-radius: 4px;
 }
 
-/* CONTAINER & SECTIONs */
+/*---------- CONTAINER & SECTIONs------- */
 
 .container {
   margin: 0 auto;
@@ -202,7 +202,7 @@ ul {
   padding: 6px 22px;
 }
 
-/* OUR STRENGTHS  */
+/*---------OUR STRENGTHS----------  */
 
 .icon-box {
   margin-bottom: 30px;
@@ -239,7 +239,7 @@ ul {
   color: var(--color-dark-grey);
 }
 
-/* WHAT DO WE DO */
+/* ----------WHAT DO WE DO---------- */
 
 .what-do-we-do-section {
   padding-bottom: 94px;
@@ -276,7 +276,7 @@ ul {
   color: var(--color-white);
 }
 
-/* OUR TEAM */
+/* -----------OUR TEAM -------------*/
 
 .our-team-index {
   text-align: center;
@@ -552,6 +552,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 /*--------- MODAL INPUTS ------------*/
 
 .modal-header {
